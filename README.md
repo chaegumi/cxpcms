@@ -3,6 +3,10 @@
 
 类似于drupal
 
+# screenshot
+
+![image](https://github.com/chaegumi/cxpcms/raw/master/screenshot/screenshot.jpg)
+
 # Thanks For
 
 http://code.tutsplus.com/tutorials/a-better-login-system--net-3461
