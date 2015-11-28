@@ -1,0 +1,21 @@
+{
+    "name": "dapphp/securimage",
+    "type": "library",
+    "description": "PHP CAPTCHA Library",
+    "keywords": ["captcha","security"],
+    "homepage": "https://www.phpcaptcha.org",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Drew Phillips",
+            "email": "drew@drew-phillips.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0",
+        "ext-gd": "*"
+    },
+    "autoload": {
+        "classmap": ["securimage.php"]
+    }
+}
