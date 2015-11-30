@@ -1,6 +1,8 @@
 # cxpcms
 基于codeigniter + adminlte + sammyjs 框架搭建的一个内容管理系统或者说内容管理框架
 
+A single-page application admin example use codeigniter,adminlte and sammyjs 
+
 类似于drupal
 
 # screenshot
