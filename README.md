@@ -7,7 +7,14 @@ A single-page application admin example use codeigniter,adminlte and sammyjs
 
 # screenshot
 
+![image](https://github.com/chaegumi/cxpcms/raw/master/screenshot/login.jpg)
+![image](https://github.com/chaegumi/cxpcms/raw/master/screenshot/index.jpg)
 ![image](https://github.com/chaegumi/cxpcms/raw/master/screenshot/screenshot.jpg)
+![image](https://github.com/chaegumi/cxpcms/raw/master/screenshot/edituser.jpg)
+![image](https://github.com/chaegumi/cxpcms/raw/master/screenshot/userpermission.jpg)
+![image](https://github.com/chaegumi/cxpcms/raw/master/screenshot/addrole.jpg)
+![image](https://github.com/chaegumi/cxpcms/raw/master/screenshot/permission.jpg)
+
 
 # Thanks For
 
