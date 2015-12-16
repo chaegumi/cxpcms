@@ -94,6 +94,8 @@ class Member_Current_User{
 		self::$ci = &get_instance();
 		self::$ci->session->unset_userdata('member_userid');
 		self::$ci->session->sess_destroy();
+		session_unset();
+		session_destroy();
 		return TRUE;
 	}
 	
