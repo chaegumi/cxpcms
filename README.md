@@ -29,10 +29,13 @@ ztree:https://github.com/zTree/zTree_v3
 
 # Install
 
+
+
+
 mysqldata/cxpcms.sql
 
 Admin Login
-
+demo: http://v2.cxpcms.com/admin.php?c=login
 admin.php
 
 username:admin
