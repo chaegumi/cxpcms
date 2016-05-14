@@ -39,7 +39,7 @@ demo: http://v2.cxpcms.com/admin.php?c=login
 admin.php
 
 username:admin
-password:147258
+password:passwd
 
 
 # Usage
