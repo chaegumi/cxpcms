@@ -112,10 +112,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?php echo '#/profile';?>" class="btn btn-default btn-flat">Profile</a>
+                  <a href="<?php echo '#/profile';?>" class="btn btn-default btn-flat"><i class="fa fa-gear"></i> Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?php echo site_url('c=logout');?>" class="btn btn-default btn-flat">Logout</a>
+                  <a href="<?php echo site_url('c=logout');?>" class="btn btn-default btn-flat"><i class="fa fa-sign-out"></i> Logout</a>
                 </div>
               </li>
             </ul>

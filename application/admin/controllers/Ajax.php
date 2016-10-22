@@ -1,11 +1,14 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php 
 /**
+ * Ajax Request
  *
  * @author		Chaegumi
- * @copyright	Copyright (c) 2015 chaegumi
+ * @copyright	Copyright (c) 2016 chaegumi
  * @email		chaegumi@qq.com
  * @filesource
  */
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 class Ajax extends MY_Controller{
 
 	function __construct(){

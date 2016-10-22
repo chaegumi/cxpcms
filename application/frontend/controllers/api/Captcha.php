@@ -1,8 +1,16 @@
 <?php 
+/**
+ * Captcha
+ *
+ * @author		Chaegumi
+ * @copyright	Copyright (c) 2013 chaegumi
+ * @email		chaegumi@qq.com
+ * @filesource
+ */
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
- * 统计代码
+ * 验证码
  */
 class Captcha extends CI_Controller {
 	function __construct(){

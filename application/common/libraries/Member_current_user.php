@@ -1,11 +1,14 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php 
 /**
+ * Member_Current_User
  *
  * @author		Chaegumi
  * @copyright	Copyright (c) 2013 chaegumi
  * @email		chaegumi@qq.com
  * @filesource
  */
+ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 class Member_Current_User{
 
 	private static $user;

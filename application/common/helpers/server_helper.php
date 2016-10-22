@@ -1,12 +1,14 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php 
 /**
+ * Common Function
  *
  * @author		Chaegumi
- * @copyright	Copyright (c) 2015 jeawin.com
- * @email		chaegumi@jeawin.com
+ * @copyright	Copyright (c) 2016~2099 cxpcms.com
+ * @email		chaegumi@qq.com
  * @filesource
  */
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 /**
  * Unserialize value only if it was serialized.
  *

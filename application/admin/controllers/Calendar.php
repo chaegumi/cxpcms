@@ -1,13 +1,15 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
+<?php 
 /**
+ * Calendar
  *
  * @author		Chaegumi
- * @copyright	Copyright (c) 2015 jeawin.com
- * @email		chaegumi@jeawin.com
+ * @copyright	Copyright (c) 2016~2099 chaegumi
+ * @email		chaegumi@qq.com
  * @filesource
  */
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+
 class Calendar extends MY_Controller {
 	
 	function __construct(){
@@ -123,3 +125,4 @@ class Calendar extends MY_Controller {
 	}
 	
 }
+// end this file
