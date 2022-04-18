@@ -91,7 +91,7 @@ class Calendar extends MY_Controller {
 					'addtime' => $_SERVER['REQUEST_TIME']
 				);
 				$this->db->insert('events', $data);
-				operation_log(array('user_id' => $this->user->id, 'content' => '添加事件：' . $data['title']));
+				// operation_log(array('user_id' => $this->user->id, 'content' => '添加事件：' . $data['title']));
 				json_response(array('success' => TRUE, 'msg' => '添加事件成功'));
 			}else{
 				check_permission('admin-edit-event');
@@ -107,7 +107,7 @@ class Calendar extends MY_Controller {
 				$this->db->where('id', $id);
 				$this->db->where('user_id', $this->user->id);
 				$this->db->update('events', $data);
-				operation_log(array('user_id' => $this->user->id, 'content' => '修改事件：' . $data['title']));
+				// operation_log(array('user_id' => $this->user->id, 'content' => '修改事件：' . $data['title']));
 				json_response(array('success' => TRUE, 'msg' => '修改事件成功'));
 				
 			}
@@ -120,7 +120,7 @@ class Calendar extends MY_Controller {
 		$this->db->where('id', $id);
 		$this->db->where('user_id', $this->user->id);
 		$this->db->delete('events');
-		operation_log(array('user_id' => $this->user->id, 'content' => '删除事件：' . $id));
+		// operation_log(array('user_id' => $this->user->id, 'content' => '删除事件：' . $id));
 		json_response(array('success' => TRUE, 'msg' => '删除事件成功'));
 	}
 	
