@@ -75,6 +75,7 @@
 <script src="<?php echo base_url();?>resource/adminlte/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
 <script src="<?php echo base_url();?>resource/adminlte/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url();?>resource/js/jquery.cookie.js"></script>
 <script src="<?php echo base_url();?>resource/js/jquery.form.js"></script>
 <script src="<?php echo base_url();?>resource/js/bootbox.js"></script>
 <script src="<?php echo base_url();?>resource/js/jquery.validate.min.js"></script>
@@ -122,6 +123,9 @@
 		}
 	});
 	$('#findpasswordform').ajaxForm({
+	    beforeSerialize:function(jqForm, options) {
+		    $('input[name="<?php echo config_item('csrf_token_name');?>"]').val($.cookie('<?php echo config_item('csrf_cookie_name');?>'));
+		},
 		beforeSubmit:function(formData, jqForm, options){
 			return $('#findpasswordform').valid();
 		},

@@ -87,6 +87,9 @@ $(function(){
 		}
 	});	
 	$('#user-edit-form').ajaxForm({
+	    beforeSerialize:function(jqForm, options) {
+		    $('input[name="<?php echo config_item('csrf_token_name');?>"]').val($.cookie('<?php echo config_item('csrf_cookie_name');?>'));
+		},
 		beforeSubmit:function(formData, jqForm, options){
 			return $('#user-edit-form').valid();
 		},

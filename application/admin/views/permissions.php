@@ -73,7 +73,7 @@ ul.ztree {margin-top: 10px;overflow-y:none;overflow-x:auto;}
 				enable:true,
 				url:'<?php echo site_url('c=permissions&m=data');?>',
 				autoParam:[],
-				otherParam:{}
+				otherParam:{<?php echo config_item('csrf_token_name');?>:$.cookie('<?php echo config_item('csrf_cookie_name');?>')}
 			},
 			callback:{
 				beforeRemove:beforeRemove,

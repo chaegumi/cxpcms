@@ -63,6 +63,7 @@ $(function(){
 			type:'post',
 			data:function(d){
 				//d.csrf_test_name = $.cookie(CSRF_COOKIE_NAME);
+				d.<?php echo config_item('csrf_token_name');?>=$.cookie('<?php echo config_item('csrf_cookie_name');?>')
 			}
 		},
 		columns:[

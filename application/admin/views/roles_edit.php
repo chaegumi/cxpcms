@@ -112,7 +112,7 @@ ul.ztree {margin-top: 10px;overflow-y:none;overflow-x:auto;}
 				enable:true,
 				url:'<?php echo site_url('c=roles&m=perm_data');?>',
 				autoParam:[],
-				otherParam:{'action':'<?php echo $action;?>', 'roleid':'<?php echo $id;?>'}
+				otherParam:{'action':'<?php echo $action;?>', 'roleid':'<?php echo $id;?>',<?php echo config_item('csrf_token_name');?>:$.cookie('<?php echo config_item('csrf_cookie_name');?>')}
 			},
 			callback:{
 			}
@@ -180,6 +180,9 @@ $(function(){
 		}
 	});	
 	$('#role-edit-form').ajaxForm({
+	    beforeSerialize:function(jqForm, options) {
+		    $('input[name="<?php echo config_item('csrf_token_name');?>"]').val($.cookie('<?php echo config_item('csrf_cookie_name');?>'));
+		},
 		beforeSubmit:function(formData, jqForm, options){
 			return $('#role-edit-form').valid();
 		},

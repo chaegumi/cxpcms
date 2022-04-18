@@ -93,7 +93,7 @@ ul.ztree {margin-top: 10px;overflow-y:none;overflow-x:auto;}
 				enable:true,
 				url:'<?php echo site_url('c=users&m=perm_data');?>',
 				autoParam:[],
-				otherParam:{'user_id':'<?php echo $user_id;?>'}
+				otherParam:{'user_id':'<?php echo $user_id;?>',<?php echo config_item('csrf_token_name');?>:$.cookie('<?php echo config_item('csrf_cookie_name');?>')}
 			},
 			callback:{
 			}
@@ -124,6 +124,9 @@ ul.ztree {margin-top: 10px;overflow-y:none;overflow-x:auto;}
 $(function(){
 	// $('#category-table').treetable({ expandable: true, initialState:'expanded' });
 	 $('#user-edit-form').ajaxForm({
+	     beforeSerialize:function(jqForm, options) {
+		    $('input[name="<?php echo config_item('csrf_token_name');?>"]').val($.cookie('<?php echo config_item('csrf_cookie_name');?>'));
+		},
 		success:function(responseText, statusText, xhr, form){
 			var json = $.parseJSON(responseText);
 			if(json.success){
