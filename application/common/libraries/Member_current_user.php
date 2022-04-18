@@ -25,7 +25,7 @@ class Member_Current_User{
 		if(self::$ci->session->userdata('member_userid')){
 			self::$ci->db->where('id', self::$ci->session->userdata('member_userid'));
 			$user1 = self::$ci->db->get('users')->row();
-			if(isset($user1) && count($user1)>0){
+			if(isset($user1)){
 				self::$ci->load->library('Member_acl');
 				$my_acl=new Member_acl($user1->id);
 				// 用户角色
@@ -50,7 +50,7 @@ class Member_Current_User{
 		self::$ci->db->or_where('email', $username);
 		$u = self::$ci->db->get('users')->row();
 
-		if(isset($u) && count($u)>0){
+		if(isset($u)){
 			if($u->status){
 				if(password_verify($password, $u->password)){	
 					$ip = self::$ci->input->ip_address();
