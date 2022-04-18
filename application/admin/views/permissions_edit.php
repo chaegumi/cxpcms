@@ -1,5 +1,5 @@
 		  <?php 
-		  if(isset($info) && count($info)>0){
+		  if(isset($info)){
 			$action = 'edit';
 			$header = 'Edit Permission';
 			$parent_id = $info->parent_id;

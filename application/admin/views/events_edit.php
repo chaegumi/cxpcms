@@ -31,7 +31,7 @@
 		  </script>
 		  <link rel="stylesheet" href="<?php echo base_url();?>resource/adminlte/plugins/datepicker/datepicker3.css">
 		  <?php 
-		  if(isset($info) && count($info)>0){
+		  if(isset($info)){
 			$action = 'edit';
 			$header = 'Edit Event';
 			$title = $info->title;

@@ -1,6 +1,6 @@
 
 			<?php 
-			if(isset($info) && count($info) > 0){
+			if(isset($info)){
 				
 				$header = 'Edit User';
 				$id = $info->id;

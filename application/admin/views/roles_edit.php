@@ -6,7 +6,7 @@ ul.ztree {margin-top: 10px;overflow-y:none;overflow-x:auto;}
 <script type="text/javascript" src="<?php echo base_url();?>resource/ztree/js/jquery.ztree.core-3.5.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>resource/ztree/js/jquery.ztree.excheck-3.5.js"></script>
 			<?php 
-			if(isset($info) && count($info) > 0){
+			if(isset($info)){
 				$header = 'Edit Role';
 				$id = $info->id;
 				$roleName = $info->roleName;
